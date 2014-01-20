@@ -1,0 +1,811 @@
+*{
+  padding:0px;
+  margin:0px;
+  font-family:Helvetica;
+  font-weight:normal;
+  /*
+  //#3fce34; MAIN GREEN COLOR
+  //#4D4D4D; DARKER GRAY COLOR
+  //#32A51D; COMPLEMENT DARKER GREEN
+  //#686868; DARK GRAY FOR BOXES
+  //#ABABAB; LIGHTER GRAY
+  */
+}
+h1,h2,h3,h4,h5{
+  text-align:center;
+  color:#3fce34;
+  font-weight:bold;
+}
+h1{
+  font-size:30px;
+}
+h2{
+  font-size:26px;
+}
+h3{
+  font-size:22px;
+}
+h4{
+  font-size:18px;
+}
+h5{
+  font-size:14px;
+}
+h6{
+  font-size:10px;
+}
+p{
+  text-indent:25px;
+  font-size:17px;
+}	
+body{
+  background-color:#000000;
+  background-image:url('backStripe.png');
+  background-repeat:repeat-x;
+}
+.appLogo{
+  display:inline-block;
+  float:left;
+  margin-left:5px;
+  width:30px;
+}
+.navText{
+  display:inline-block;
+  width:1200px;
+  height:30px;
+  font-size:14px;
+}
+.logonBox{
+  display:inline-block;
+  float:right;
+  width:300px;
+}
+.navLoginText{
+  line-height:30px;
+  display:inline-flex;
+  text-align:center;
+  color:#ffffff;
+}
+.navLoginText a{
+  text-decoration:none;
+  color:#ffffff;
+  font-weight:bold;
+}
+.navLogin{
+  display:inline-flex;
+  float:right;
+}
+.navLogin a{
+  display:block;
+}
+.navLogin a:link,.navLogin a:visited{
+  padding:0px 20px;
+  text-align:center;
+  background-color:#ffffff;
+  text-decoration:none;
+  line-height:30px;
+  color:#000000;
+}
+.navLogin a:hover,.navLogin a:active{
+  padding:0px 20px;
+  text-align:center;
+  background-color:#e4e4e4;
+  text-decoration:none;
+  line-height:30px;
+  color:#000000;
+}
+.navList{
+  display:block;
+  float:left;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+}
+.navList li{
+  display:inline-flex;
+  #display:block;
+  _display:block;
+  margin:0px;
+}
+.navList a{
+  display:block;
+}
+.navList a:link,.navList a:visited{
+  font-weight:bold;
+  color:#FFFFFF;
+  text-align:center;
+  line-height:30px;
+  padding: 0px 15px 0px 15px;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+.navList a:hover,.navList a:active{
+  color:#000000;
+  background-color:#32A51D;
+}
+#mainBody{
+  margin:auto;
+  width:1270px;
+  min-height:400px;
+  background-olor:red;
+}
+#bodyClass{
+  margin: auto;
+  width:1200px;
+  min-height:500px;
+  color:#ffffff;
+  text-align:center;
+  background-olor:purple;
+}
+#headerBox{
+  height:70px;
+  width:1200px;
+  font-size:14px;
+}
+.logoMain{
+  display:inline-block;
+  float:left;
+  width:300px;
+  height:70px;
+}
+.logoPng{
+  width:300px;
+  height:70px;
+}
+.headerSpace{
+  display:inline-block;
+  float:left;
+  width:350px;
+  height:70px;
+}
+.headerSpace .fb-like{
+  position:relative;
+  top:40px;
+  left:100px;
+}
+.headerSpaceTwo{
+  display:inline-block;
+  float:left;
+  width:350px;
+  height:70px;
+  text-align:right;
+}
+.loginBoxes{
+  display:inline-block;
+  float:right;
+  width:200px;
+  height:70px;
+  text-align:left;
+}
+.userNameText{
+  height:25px;
+  line-height:25px;
+  margin:5px 10px 10px 0px;
+  text-align:right;
+  font-weight:bold;
+  color:#ff0000;
+}
+#bodyMainSection{
+  text-align:left;
+  display:block;
+  width:1200px;
+  min-height:400px;
+  font-size:14px;
+}
+#contentBody{
+  text-align:left;
+  display:inline-block;
+  vertical-align:top;
+  width:700px;
+  min-height:400px;
+}
+.text{
+  border:2px solid #e4e4e4;
+  border-radius:3px;
+  width:195px;
+  height:20px;
+  margin:5px 0px;
+}
+.text:focus{
+  border:2px solid #3fce34;
+}
+.contentLinks{
+  display:inline-block;
+  vertical-align:top;
+  width:200px;
+  min-height:100px;
+  margin:0;
+  padding:0;
+  font-size:14px;
+}
+.contentMain{
+  display:inline-block;
+  width:700px;
+  min-height:200px;
+  margin:0;
+  padding:0;
+}
+.contentBox{
+  display:inline-block;
+  vertical-align:top;
+  width:290px;
+  min-height:100px;
+  margin:0;
+  padding:0;
+}
+.contentInsideBoxes{
+  display:block;
+  width:290px;
+  height:300px;
+  margin-bottom:5px;
+  background-color:#686868;
+}
+a.sideLinks{
+  background-color:#686868;
+  display:inline-flex;
+  height:15px;
+  width:190px;
+  padding:5px;
+  text-align:left;
+  line-height:15px;
+  font-weight:bold;
+  text-decoration:none;
+  color:#ffffff;
+}
+a.sideLinks:hover{
+  background-color:#3fce34;
+  color:#000000;
+}
+a.sideLinks:active{
+  background-color:#32A51D;
+  color:#000000;
+}
+a.sideLinkDrop{
+  background-color:#4D4D4D;
+  display:inline-flex;
+  height:15px;
+  text-indent:10px;
+  width:185px;
+  padding:5px;
+  margin-left:5px;
+  text-align:left;
+  line-height:15px;
+  font-weight:bold;
+  font-size:13px;
+  text-decoration:none;
+  color:#ffffff;
+}
+a.sideLinkDrop:hover{
+  background-color:#3fce34;
+  color:#000000;
+}
+a.sideLinkDrop:active{
+  background-color:#32A51D;
+  color:#000000;
+}
+.bodyArticles{
+  display:block;
+  width:700px;
+  margin-bottom:5px;
+  background-color:#686868;
+}
+.bodyArticleText{
+  display:block;
+  width:680px;
+  padding:10px;
+}
+#mainFooter{
+  width:100%;
+  min-height:100px;
+  background-color:#3fce34;
+}
+.fullScreen{
+  display:none;
+  position:fixed;
+  top:0px;
+  left:0px;
+  height:100%;
+  width:100%;
+  background-color:#000000;
+  opacity:0.7;
+  z-index:1998;
+}
+/*.signBox Begin*/
+.signUpBox{
+  display:none;
+  position:fixed;
+  background-color:#ffffff;
+  border-radius:10px;
+  text-align:center;
+  margin:auto;
+  z-index:1999;
+  opacity:1.0;
+  overflow:hidden;
+}
+.signUpBox .sBoxButtons{
+  display:block;
+  width:140px;
+  height:28px;
+  position:absolute;
+  top:460px;
+  left:230px;
+}
+.signUpBox h2{
+  position:absolute;
+  top:10px;
+  width:600px;
+  text-align:center;
+  margin-bottom:20px;
+}
+.signUpBox #sBoxEmail{
+  nav-index:1;
+  nav-down:#sBoxUser;
+  nav-up:.sBoxCANCEL input;
+}
+.signUpBox #sBoxUser{
+  nav-index:2;
+  nav-down:#sBoxPass1;
+  nav-up:#sBoxEmail;
+}
+.signUpBox #sBoxPass1{
+  nav-index:3;
+  nav-down:#sBoxPass2;
+  nav-up:#sBoxUser;
+}
+.signUpBox #sBoxPass2{
+  nav-index:4;
+  nav-down:.sBoxOK input;
+  nav-up:#sBoxPass1;
+}
+.signUpBox .sUpClose{
+  position:absolute;
+  top:5px;
+  right:5px;
+  height:25px;
+  width:25px;
+  border:0px;
+}
+.signUpBox .sUpClose a{
+  display: block;
+  height: 25px;
+  width: 25px;
+  background-image: url(picElements/closeX.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  cursor: pointer;
+  border:0px;
+  z-index:2000;
+}
+.signUpBox .sUpClose a:hover {
+  background-position: -25px 0px;
+}
+.signUpBox .sUpClose a:active {
+  background-position: -50px 0px;
+}
+.signUpBox .sBoxForm{
+  position:absolute;
+  top:60px;
+  left:60px;
+  font-family:Helvetica;
+  text-align:left;
+}
+.signUpBox .sBoxForm span{
+  font-size:10px;
+  font-weight:normal;
+}
+.signUpBox .sBoxInput{
+  border:2px solid #e4e4e4;
+  border-radius:3px;
+  width:195px;
+  height:20px;
+  margin:5px 0px 15px 0px;
+  text-align:left;
+}
+.signUpBox .sBoxInput:focus{
+  border:2px solid #3fce34;
+}
+.signUpBox .sBoxPass{
+  margin-bottom:5px;
+}
+.signUpBox .signPictureBox{
+  display:block;
+  position:absolute;
+  top:60px;
+  right:50px;
+  width:148px;
+  height:148px;
+  border:1px solid #000000;
+  border-radius:6px;
+}
+.signPictureBox .signPicture{
+  position:static;
+  display:block;
+  width:138px;
+  height:138px;
+  border:1px solid #3fce34;
+  border-radius:6px;
+  text-align:center;
+  margin:4px;
+  overflow:hidden;
+}
+.signUpBox .sBoxOK {
+  display:block;
+  float:left;
+  height:28px;
+  width:65px;
+  font-size:12px;
+  color:#ffffff;
+  text-align:center;
+  line-height:28px;
+  -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.signUpBox .sBoxOK input{
+  display: block;
+  height: 28px;
+  width: 65px;
+  background-image: url(picElements/okButton.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  cursor: pointer;
+  border:0px;
+  z-index:2001;
+  nav-index:5;
+  nav-down:.sBoxCANCEL input;
+  nav-up:#sBoxPass2;
+  font-size:12px;
+  color:#ffffff;
+  background-color:#ffffff;
+  border:0px none transparent;
+}
+.signUpBox .sBoxOK input:hover, .signUpBox .sBoxOK input:focus {
+  background-position: -70px 0px;
+  color:#000000;
+  border:0px none transparent;
+}
+.signUpBox .sBoxOK input:active {
+  background-position: -140px 0px;
+  color:#000000;
+  border:0px none transparent;
+}
+.signUpBox .sBoxCANCEL {
+  display:block;
+  float:right;
+  height:28px;
+  width:65px;
+  font-size:12px;
+  color:#ffffff;
+  text-align:center;
+  line-height:28px;
+  -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+.signUpBox .sBoxCANCEL input{
+  display: block;
+  height: 28px;
+  width: 65px;
+  background-image: url(picElements/cancelButton.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  cursor: pointer;
+  border:0px;
+  z-index:2001;
+  nav-index:6;
+  nav-down:#sBoxEmail;
+  nav-up:.sBoxOK input;
+  font-size:12px;
+  color:#ffffff;
+  background-color:#ffffff;
+  border:0px none transparent;
+}
+.signUpBox .sBoxCANCEL input:hover, .signUpBox .sBoxCANCEL input:focus {
+  background-position: -70px 0px;
+  color:#000000;
+  border:0px none transparent;
+}
+.signUpBox .sBoxCANCEL input:active {
+  background-position: -140px 0px;
+  color:#000000;
+  border:0px none transparent;
+}
+.signUpBox .inputStyle{
+  position:relative;
+  width:140px;
+  height:140px;
+  overflow:hidden;
+}
+.signUpBox .inputStyle img{
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index:2001;
+}
+.signUpBox .inputStyle input{
+  z-index:2002;
+  opacity:0;
+  cursor:pointer;
+  position:absolute;
+  width:140px;
+  height:140px;
+  top:0px;
+  left:0px;
+}
+/*.signUpBoxContact*/
+.signUpBoxContact{
+  text-align:center;
+  position:relative;
+  display:block;
+  margin:auto;
+  min-height:500px;
+  width:100%;
+  overflow:hidden;
+  color:#ffffff;
+}
+.signUpBoxContact #sBoxEmail{
+  nav-index:1;
+  nav-down:#sBoxUser;
+  nav-up:.sBoxCANCEL input;
+}
+.signUpBoxContact #sBoxUser{
+  nav-index:2;
+  nav-down:#sBoxPass1;
+  nav-up:#sBoxEmail;
+}
+.signUpBoxContact #sBoxPass1{
+  nav-index:3;
+  nav-down:#sBoxPass2;
+  nav-up:#sBoxUser;
+}
+.signUpBoxContact #sBoxPass2{
+  nav-index:4;
+  nav-down:.sBoxOK input;
+  nav-up:#sBoxPass1;
+}
+.signUpBoxContact .sUpClose{
+  position:absolute;
+  top:5px;
+  right:5px;
+  height:25px;
+  width:25px;
+  border:0px;
+}
+.signUpBoxContact .sUpClose a{
+  display: block;
+  height: 25px;
+  width: 25px;
+  background-image: url(picElements/closeX.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  cursor: pointer;
+  border:0px;
+}
+.signUpBoxContact .sUpClose a:hover {
+  background-position: -25px 0px;
+}
+.signUpBoxContact .sUpClose a:active {
+  background-position: -50px 0px;
+}
+.signUpBoxContact .sBoxForm{
+  position:relative;
+  top:60px;
+  left:60px;
+  font-family:Helvetica;
+  text-align:left;
+}
+.signUpBoxContact .sBoxForm span{
+  font-size:10px;
+  font-weight:normal;
+}
+.signUpBoxContact .sBoxInput{
+  border:2px solid #e4e4e4;
+  border-radius:3px;
+  width:195px;
+  height:20px;
+  margin:5px 0px 15px 0px;
+  text-align:left;
+}
+.signUpBoxContact .sBoxInput:focus{
+  border:2px solid #3fce34;
+}
+.signUpBoxContact .sBoxPass{
+  margin-bottom:5px;
+}
+.signUpBoxContact .sBoxButtons{
+  display:block;
+  width:140px;
+  height:28px;
+  position:absolute;
+  top:460px;
+  left:270px;
+}
+.signUpBoxContact .sBoxOK {
+  display:block;
+  float:left;
+  height:28px;
+  width:65px;
+  font-size:12px;
+  color:#ffffff;
+  text-align:center;
+  line-height:28px;
+  -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.signUpBoxContact .sBoxOK input{
+  display: block;
+  height: 28px;
+  width: 65px;
+  background-image: url(picElements/okButton.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  cursor: pointer;
+  border:0px;
+  nav-index:5;
+  nav-down:.sBoxCANCEL input;
+  nav-up:#sBoxPass2;
+  font-size:12px;
+  color:#ffffff;
+  background-color:#686868;
+  border:0px none transparent;
+}
+.signUpBoxContact .sBoxOK input:hover, .signUpBoxContact .sBoxOK input:focus {
+  background-position: -70px 0px;
+  color:#000000;
+  border:0px none transparent;
+}
+.signUpBoxContact .sBoxOK input:active {
+  background-position: -140px 0px;
+  color:#000000;
+  border:0px none transparent;
+}
+.signUpBoxContact .sBoxCANCEL {
+  display:block;
+  float:right;
+  height:28px;
+  width:65px;
+  font-size:12px;
+  color:#ffffff;
+  text-align:center;
+  line-height:28px;
+  -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
+}
+.signUpBoxContact .sBoxCANCEL input{
+  display: block;
+  height: 28px;
+  width: 65px;
+  background-image: url(picElements/cancelButton.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  cursor: pointer;
+  border:0px;
+  nav-index:6;
+  nav-down:#sBoxEmail;
+  nav-up:.sBoxOK input;
+  font-size:12px;
+  color:#ffffff;
+  background-color:#686868;
+  border:0px none transparent;
+}
+.signUpBoxContact .sBoxCANCEL input:hover, .signUpBoxContact .sBoxCANCEL input:focus {
+  background-position: -70px 0px;
+  color:#000000;
+  border:0px none transparent;
+}
+.signUpBoxContact .sBoxCANCEL input:active {
+  background-position: -140px 0px;
+  color:#000000;
+  border:0px none transparent;
+}
+.signUpBoxContact .signPictureBox{
+  display:block;
+  position:absolute;
+  top:80px;
+  right:50px;
+  width:148px;
+  height:148px;
+  border:1px solid #000000;
+  border-radius:6px;
+}
+.signUpBoxContact .inputStyle{
+  position:relative;
+  width:140px;
+  height:140px;
+  overflow:hidden;
+}
+.signUpBoxContact .inputStyle img{
+  position:absolute;
+  top:0px;
+  left:0px;
+  z-index:50;
+}
+.signUpBoxContact .inputStyle div.signPicText{
+  position:absolute;
+  top:30px;
+  left:0px;
+  width:140px;
+  height:140px;
+  line-height:40px;
+  text-align:center;
+  opacity:0.75;
+  font-size:30px;
+  z-index:51;
+  text-shadow:0px 0px 10px #000000;
+}
+.signUpBoxContact .inputStyle input{
+  z-index:52;
+  opacity:0;
+  cursor:pointer;
+  position:absolute;
+  width:140px;
+  height:140px;
+  top:0px;
+  left:0px;
+}
+
+
+
+
+/*
+//The News group website
+// <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+//<script src="transitions/transitions.js"></script>
+//<script src="jquery/farinspace/jquery.imgpreload.min.js"></script>
+//<script src="elements/jquery1-10-2.min.js"></script>
+//<link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico">
+//<link rel="stylesheet" type="text/css" href=""/>
+
+<script src="elements/jquery1-10-2.min.js"></script>
+	<script src="http://malsup.github.com/jquery.form.js"></script>
+	
+	
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-44928071-1', 'webprimmer.com');
+	  ga('send', 'pageview');
+	</script>
+	
+  <script>
+
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : '652663234777937',                        // App ID from the app dashboard
+      channelUrl : '//localhost/WebPrimmer/fb_js/channel.html', // Channel file for x-domain comms
+      status     : true,                                 // Check Facebook Login status
+      xfbml      : true                                  // Look for social plugins on the page
+    });
+
+    // Additional initialization code such as adding Event Listeners goes here
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+   
+</script>
+
+
+*/

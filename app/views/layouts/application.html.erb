@@ -1,14 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html>
-<head>
-  <title>Webprimmer</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title><%= title %></title>
+    <%= csrf_meta_tag %>
+    <%= render 'layouts/stylesheets', :media => "all" %>
+    <link rel="shortcut icon" type="image/x-icon" href="logos/favicon.ico">
+  </head>
 
-<%= yield %>
+  <body class="mainBodyClass">
+    
+  <div id="fb-root"></div>
 
-</body>
+    
+    
+    <div class="appLogo">
+      <%= link_to upper_logo, root_path %>
+    </div>
+    <div id="mainBody">
+      <div id="bodyClass">
+        <%= render 'layouts/navtext' %>
+        <%= render 'layouts/header' %>
+        <div id="bodyMainSection">
+          <%= render 'layouts/navside' %>
+          <div id="contentBody">
+            <div class="contentMain">
+            
+              <%= yield %>
+              
+            </div>
+          </div>
+            <div class="contentBox">
+              <div class="contentInsideBoxes"></div>
+              <div class="contentInsideBoxes"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <%= render 'layouts/footer' %>
+  <%= debug(params) if Rails.env.development? %>
+  </body>
 </html>
